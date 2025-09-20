@@ -47,7 +47,7 @@ nav, p, section, article {
     height:auto
 }
 
-h1{
+.hero h1{
     position: absolute;
     top: 20px;
     width: 100%;
@@ -58,7 +58,7 @@ h1{
     color: #ffff;
 }
 
-article {
+.hero article {
     position: absolute;
     top: 260px;
     width: 95%;
