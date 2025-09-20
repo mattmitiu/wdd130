@@ -55,18 +55,17 @@ h1{
     text-align: center;
     opacity: 0.9;
     background-color: var(--accent1-color);
-    color: #ffff;
+    color: #fff;
 }
 
 article {
     position: absolute;
     top: 260px;
     width: 95%;
-    padding: 10px;
     text-align: left;
     opacity: 0.9;
     background-color: var(--accent1-color);
-    color: #ffff;
+    color: #fff;
 
     
 }
