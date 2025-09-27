@@ -65,8 +65,11 @@ nav, p, section, article {
 .hero img {
     display: block;
     width: 100%;
-    height:auto
+    height:auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
+
 
 h1{
     position: absolute;
@@ -148,6 +151,7 @@ article {
 .hero article img {
     float: right;
     width: 125px;
+    border-radius: 5px;
 }
 
 footer {
