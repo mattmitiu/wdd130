@@ -1,0 +1,28 @@
+.employee {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 16px;
+    text-align: center;
+}
+
+.employee figure {
+    flex: 0 0 120px; /* Each item takes up to 150px */
+    margin: 0;
+}
+
+.employee img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.employee figcaption {
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: var(--primary-color);
+}
