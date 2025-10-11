@@ -45,7 +45,7 @@ header, main, footer{
 
 h1, h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: var(--accent1-color);
 }
 
 
@@ -60,26 +60,34 @@ nav, p, section, article {
 
 .hero{
     position: relative;
+    width: 100%;
+   
 }
 
 .hero img {
+    
     display: block;
     width: 100%;
-    height:auto;
+    height:100%;
     border-radius: 5px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
 }
+
+
 
 
 .hero h1{
     position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.9;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
     background-color: var(--accent1-color);
-    color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    opacity: 0.9;
 }
 
 .hero2 h1 {
@@ -92,13 +100,14 @@ nav, p, section, article {
 h2{
     position: relative;
     text-align: center;
+    color: var(--accent1-color);
 }
 
 h3{
     position: relative;
     text-align: center;
     font-family: var(--heading-font);
-    color: var(--primary-color)
+    color: var(--accent1-color)
 }
 .history {
     display: grid;
@@ -126,6 +135,7 @@ h3{
     gap: 20px;
     padding: 16px;
     text-align: center;
+    
 }
 
 .adventure figure {
@@ -145,10 +155,10 @@ h3{
     margin-top: 8px;
     font-weight: bold;
     font-size: 0.9rem;
-    color: var(--primary-color);
+    color: var(--accent1-color);
 }
 
-article {
+.hero article {
     position: absolute;
     top: 260px;
     width: 95%;
@@ -248,4 +258,156 @@ footer p {
 
 .contact-form button:hover {
     background-color: #005fa3;
+}
+
+.newsletter{
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    opacity: 0.9;
+    background-color: var(--accent1-color);
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"],
+.newsletter textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.cta {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.cta-button {
+    background-color:var(--accent1-color);
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: var(--accent1-color);
+}
+
+.grid-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 3rem 0;
+    padding: 1rem;
+    
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 250px;
+    border-radius: 8px;
+}
+
+.trip-descriptions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 1rem;
+}
+
+.trip {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.trip img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.trip h2 {
+    margin-bottom: 0.5rem;
+    color: var(--accent1-color);
+}
+
+/* Trips table */
+.trip-table-section {
+    margin: 3rem 1rem;
+}
+
+.trip-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.trip-table thead {
+    background-color: var(--accent1-color);
+    color: white;
+}
+
+.trip-table th,
+.trip-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.trip-table tbody tr:hover {
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+    cursor: pointer;
+}
+
+.trip-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.trip-descriptions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.trip {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.trip img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.container {
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 1rem;
 }
